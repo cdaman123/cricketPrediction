@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class = "formbox">
+            <h1>Fill Detail</h1>
+            <form action="{{ url_for('predict')}}"method="post" class = "box">
+                <div class = "r">
+                <div class = "p">
+                Outlook    :<select name="Outlook">
+                                <option value="1">Rain</option>
+                                <option value="2">Sunny</option>
+                                <option value="3">Overcast</option>
+                            </select>
+                Temp       :<select name="Temp">
+                                <option value="1">Hot</option>
+                                <option value="2">Mild</option>
+                                <option value="3">Cold</option>
+                            </select>
+                Humidity   :<select name="Humidity">
+                                <option value="1">High</option>
+                                <option value="2">Normal</option>
+                            </select>
+                Wind       :<select name="Icecream Flavours">
+                                <option value="1">Strong</option>
+                                <option value="2">Week</option>
+                            </select>
+                </div>
+            </div>
+                <input type="submit" name = "" value="Done">
+            </form>
+        </div>
+
+        <div class = "result">
+            <p>{{result1}}</p>
+            <p>{{result2}}</p>
+        </div>
+    </body>
+</html>

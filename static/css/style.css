@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(pic1.jpeg);
+    background-size: cover;
+    background-position: top;
+    font-family: sans-serif;
+}
+.formbox{
+    width:25%;
+    height:70%;
+    background:rgba(0, 0, 0, 0.384);
+    color: #ffffff;
+    top:25%;
+    font-weight: bold;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-25%);
+    box-sizing: border-box;
+    padding: 30px 30px 30px  30px;
+}
+.q{
+    width: 260px;
+    float: right;
+    top: 0%;
+    left: 50%;
+    padding: 10px;
+    height: 320px; 
+}
+.p{
+    padding: 20px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.formbox input[type = "submit"]{
+    width: 50%;
+    height: 30px;
+    align-self: center;
+    color: #ffffff;
+    background: darkmagenta;
+    font-weight: bold;
+    border: darkmagenta;
+    left: 25%;
+    font-size: 20px;
+    position: relative;
+}
+
+.result{
+    width:25%;
+    height:15%;
+    background: chartreuse;
+    color: #ffffff;
+    top:80%;
+    left:37.5%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+
+}
+select{
+    position: relative;
+    width: 100%;
+    align-self: center;
+    color: #ffffff;
+    background: darkmagenta;
+    font-weight: bold;
+    border: darkmagenta;
+    margin: 10px 0px 20px 0;
+    height: 25px;
+  }
